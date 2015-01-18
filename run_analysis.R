@@ -41,7 +41,7 @@ print(names(total))
 print("From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject:\n")
 
 tidydata<-aggregate(x=selected, by=list(subject_id=selected[["subject_id"]],activity=selected[["activity"]]), FUN=mean)
-write.table(tidydata,file="tidydata.csv",row.names=FALSE)
+write.table(tidydata,file="tidydata.txt",row.names=FALSE)
 
 #7352+2947
 
